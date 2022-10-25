@@ -1,7 +1,7 @@
 from PIL import ImageGrab
 import pyautogui as gui
 import keyboard
-import time # used to see performance of program
+import time
 
 # gui.moveTo(250,200)
 
@@ -19,9 +19,11 @@ while True:
                 if keyboard.is_pressed('w') == False and keyboard.is_pressed('s') == False:
                     if keyboard.is_pressed('a') == False and keyboard.is_pressed('d') == False:
                         gui.press(".")
+                        time.sleep(0.2)
                         break
                     if keyboard.is_pressed('a') == True and keyboard.is_pressed('d') == True:
                         gui.press(".")
+                        time.sleep(0.2)
                         break
             
 
